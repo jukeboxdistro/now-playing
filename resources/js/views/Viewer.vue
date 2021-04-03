@@ -48,15 +48,19 @@ export default {
 
     updateTrack(channelId) {
       axios
-          .get(`https://api.jukebox.gg/v1/twitch-extensions/${channelId}/currently-playing`)
+          .get(`https://api-cache.jukebox.gg/v1/twitch-extensions/${channelId}/currently-playing`)
           .then(response => {
             if (response.status === 204) {
               this.track = null;
             } else {
               this.track = response.data;
             }
+            setTimeout(() => this.updateTrack(channelId), 60000);
           })
-          .catch(error => console.error(error));
+          .catch(error => {
+            console.error(error);
+            setTimeout(() => this.updateTrack(channelId), 60000);
+          });
     }
   }
 }
