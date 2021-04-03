@@ -37,10 +37,6 @@ export default {
     }
   },
 
-  mounted() {
-    this.updateTrack('106415581');
-  },
-
   methods: {
     boot () {
       logger('Enabling...');
