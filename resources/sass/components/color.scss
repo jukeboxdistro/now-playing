@@ -1,0 +1,15 @@
+// Gradient Background
+
+.bg-gradient{
+    background: linear-gradient(135deg, $purple 0%,$blue 100%);
+}
+
+// Text color utility classes
+//
+// Create text utility classes for all items in the Bootstrap $colors list
+
+@each $current-color in $colors{
+    $key: nth($current-color,1);
+    $value: nth($current-color,2);
+    .text-#{$key}{ color: $value !important; }
+}

@@ -1,0 +1,251 @@
+$night-100: #090909;
+$night-200: #141414;
+$night-300: #1c1c1c;
+$night-400: #242424;
+$night-500: #2d2d2d;
+$night-600: #5e5e5e;
+$night-700: #838383;
+$night-800: #ababab;
+$night-900: #d4d4d4;
+
+
+body[data-theme="dark"] {
+    background: $night-200;
+    color: $white;
+
+    .text-dark {
+        color: $white!important;
+    }
+
+    .btn {
+        &-secondary {
+            border-color: $night-600;
+            background-color: $night-600;
+        }
+
+        &-secondary:hover {
+            border-color: $night-400;
+            background-color: $night-400;
+        }
+
+        &-dark {
+            color: $night-500;
+            border-color: $night-900;
+            background-color: $night-900;
+        }
+
+        &-dark:hover {
+            border-color: $night-700;
+            background-color: $night-700;
+        }
+    }
+
+    .navbar-brand {
+        color: $white !important;
+    }
+
+    .navbar-light .navbar-brand {
+        color: $night-500;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: $night-700;
+        border: none;
+    }
+
+    .card {
+        background-color: $night-300;
+    }
+
+    .bg-white {
+        background: $night-100 !important;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: $night-800 !important;
+    }
+
+    a.text-primary:hover, a.text-primary:focus {
+        color: #6d00ff !important;
+    }
+
+    .player {
+        background: $night-400 !important;
+        color: $night-800!important;
+        .border-light {
+            border-color: $night-500!important;
+        }
+    }
+
+    // Drop Down
+
+    .dropdown-item {
+        color: $night-800;
+    }
+    .dropdown-item:hover, .dropdown-item:focus {
+        color: #fff;
+    }
+    .dropdown-menu {
+        background-color: $night-500;
+    }
+    .dropdown-divider {
+        border-color: $night-400;
+    }
+
+    // Forms ==================================================================
+
+    .form-control-plaintext {
+        color: $white;
+    }
+
+    .form-control, .input-group-text, .custom-select, .custom-file-input {
+        color: $white;
+        background-color: $night-300;
+        border: 1px solid $night-500;
+    }
+
+    .form-control:focus {
+        color: $white;
+        background-color: $night-300;
+    }
+
+    .form-control:disabled, .form-control[readonly] {
+        background-color: $night-500;
+    }
+
+    .custom-range::-webkit-slider-runnable-track {
+        background: $night-500;
+    }
+    .custom-range::-moz-range-track {
+        background: $night-500;
+    }
+    .custom-range::-ms-track {
+        background: $night-500;
+    }
+
+    // Progress
+
+    .progress {
+        background: $night-600!important;
+    }
+
+    // Jubotron
+
+    .jumbotron, .breadcrumb, .list-group-item {
+        background-color: $night-500;
+    }
+
+    .jumbocard-body {
+        background: linear-gradient(to right, rgba(45, 45, 45) 25%, rgba(0, 0, 0, 0));
+    }
+
+    .list-group-item-action {
+        color: $white;
+    }
+
+    .list-group-item.disabled, .list-group-item:disabled {
+        background-color: $night-600;
+    }
+
+    // Modal
+
+    .modal-content {
+        border: 1px solid $night-200;
+        background-color: $night-500;
+        .modal-header {
+            border-bottom: 1px solid $night-400;
+        }
+        .modal-footer {
+            border-top: 1px solid $night-400;
+        }
+    }
+
+    .border-top {
+        border-top-color: $night-400!important;
+    }
+
+    .toast {
+        border: 1px solid $night-200;
+        background-color: $night-100;
+        &-header {
+            background-color: $night-300;
+            color: $night-800;
+            border-bottom: 1px solid $night-400;
+        }
+        &-body {
+            background-color: $night-500;
+        }
+    }
+
+    // Table
+    .bg-light {
+        color: $night-500;
+    }
+
+    .table {
+        color: $white;
+    }
+
+    .table-borderless tr.table-active {
+        > th, > td {
+            &:after {
+                border-color: $night-500;
+            }
+        }
+        > th{
+            &:after{
+                border-color: $night-500;
+            }
+        }
+        > td:last-child{
+            &:after{
+                border-color: $night-500;
+            }
+        }
+    }
+
+    .table-light, .table-light > th, .table-light > td {
+        color: $night-500!important;
+    }
+
+    .table-hover tr.table-active:hover {
+        background-color: $night-400 !important;
+    }
+
+    .table-hover tbody tr:hover {
+        color: $night-800!important;
+    }
+
+    .table-hover .table-active:hover, .table-hover .table-active:hover > th, .table-hover .table-active:hover > td {
+        color: $night-800!important;
+    }
+
+    .table thead th {
+        border-color: $night-500;
+    }
+
+    .table th, .table td {
+        border-color: $night-500;
+    }
+
+    // Nav
+    .nav-tabs {
+        border-bottom: 1px solid $night-500;
+    }
+    .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+        border-color: $night-500;
+    }
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        color: $white;
+        border-color: $night-500;
+        background-color: $night-500;
+    }
+
+    .partner-app {
+        background: $night-200;
+    }
+
+    .partner-shadow {
+        background: linear-gradient(to top, $night-200, transparent);
+    }
+}

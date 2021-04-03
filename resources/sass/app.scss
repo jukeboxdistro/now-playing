@@ -1,12 +1,83 @@
-@import "variables";
+// Variables
+@import 'variables';
 
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import 'bootswatch';
+
+@import 'components/avatar';
+@import 'components/background-images';
+@import 'components/color';
+@import 'components/tables';
+@import 'components/utilities';
+
+@import 'dark-mode';
+@import 'custom';
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    padding: 0 0;
+}
+
+.flex-even {
+    flex: 1;
+}
+
+.partner-shadow {
+    margin-top: -22.5rem;
+    height: 10rem;
+    background: linear-gradient(to top, $body-bg, transparent);
+}
+
+.partner-app {
+    padding-top: 2rem;
+    background: $body-bg;
+}
+
+@include media-breakpoint-up(md) {
+    .flex-even-md {
+        flex: 1;
+    }
+}
+
+.player {
+    background: $gray-400;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: $night-100;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $night-700;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $night-600;
+}
+
+// bs4 tweaks
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@media (display-mode: standalone) {
+    body {
+        // prefer only on release builds
+        //overscroll-behavior-y: contain;
+    }
+}
+
+.background-blur {
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
 }
