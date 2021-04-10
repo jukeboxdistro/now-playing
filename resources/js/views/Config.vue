@@ -17,6 +17,10 @@
         <a href="https://jukebox.gg/partnership" class="btn btn-lg btn-outline-light" target="_blank">
           Sign up as Artist
         </a>
+
+        <div class="text-center text-muted mt-3">
+          Next, add the extension to your panels.
+        </div>
       </div>
     </div>
 </template>

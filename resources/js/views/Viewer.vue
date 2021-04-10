@@ -55,11 +55,11 @@ export default {
             } else {
               this.track = response.data;
             }
-            setTimeout(() => this.updateTrack(channelId), 60000);
+            setTimeout(() => this.updateTrack(channelId), 30000);
           })
           .catch(error => {
             console.error(error);
-            setTimeout(() => this.updateTrack(channelId), 60000);
+            setTimeout(() => this.updateTrack(channelId), 30000);
           });
     }
   }
